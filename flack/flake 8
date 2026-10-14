@@ -1,1 +1,49 @@
+#primeiro comando
 
+
+TAX_RATE = 0.2
+
+def calculate_tax(price):
+    return price * TAX_RATE
+    
+def sum_prices(*prices):
+    return sum(prices)
+
+
+total = sum_prices(100, 200, 300, 400)
+tax = calculate_tax(total)
+final_price = total + tax
+print ("Final price is", final_price) 
+
+
+
+
+
+
+
+#segundo comando
+
+
+
+def calculate_points(*points):
+    return sum(points)
+
+
+def show_house_points():
+    harry = 20
+    hermione = 25
+    ron = 18
+    draco = 30
+
+    gryffindor = calculate_points(harry, hermione, ron)
+    slytherin = calculate_points(draco)
+
+    print("Pontos da Grifinória:", gryffindor)
+    print("Pontos da Sonserina:", slytherin)
+
+
+show_house_points()
+
+
+
+ 
